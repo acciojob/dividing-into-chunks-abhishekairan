@@ -8,14 +8,11 @@ const divide = (arr, n) => {
 	for (let a of arr) {
 		sum += a
 		if(sum>=n){
-      console.log("greater")
 			result.push(subresult)
       subresult = []
 			sum=0
 		}
 		subresult.push(a)
-    console.log(subresult)
-    console.log(sum)
 	}
   if(subresult.length>0){
     result.push(subresult)
