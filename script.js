@@ -6,14 +6,20 @@ const divide = (arr, n) => {
 	let subresult = []
 	let sum = 0
 	for (let a of arr) {
+		sum += a
 		if(sum>=n){
+      console.log("greater")
 			result.push(subresult)
-			subresult = []
+      subresult = []
 			sum=0
 		}
 		subresult.push(a)
-		sum += a
+    console.log(subresult)
+    console.log(sum)
 	}
+  if(subresult.length>0){
+    result.push(subresult)
+  }
   return result
 };
 
