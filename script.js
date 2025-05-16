@@ -7,10 +7,10 @@ const divide = (arr, n) => {
 	let sum = 0
 	for (let a of arr) {
 		sum += a
-		if(sum>=n){
+		if(sum>n){
 			result.push(subresult)
       subresult = []
-			sum=0
+			sum=a
 		}
 		subresult.push(a)
 	}
